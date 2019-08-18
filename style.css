@@ -4,12 +4,19 @@ html {
     overflow: hidden;
 }
 
+a::selection {
+    display: none;
+}
+
 body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background: linear-gradient(#AFD0D6, #C49799);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
     color: #fff;
 }
 
@@ -35,7 +42,7 @@ nav {
 #logoname a {
     padding: 0 7.5px;
     text-decoration: none;
-    color: #fff;
+    color: #80989C;
     transition: 0.2s;
 }
 
@@ -90,6 +97,10 @@ button#reload {
     width: 80px;
     border: #fff solid 2px;
     transition: 0.3s;
+}
+
+.theme button:focus {
+    outline: none;
 }
 
 .theme {
