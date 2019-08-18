@@ -47,8 +47,7 @@ nav {
 }
 
 #links a:hover,
-#logoname a:hover,
-button#reload:hover {
+#logoname a:hover {
     filter: brightness(70%);
     transition: 0.2s;
 }
@@ -61,21 +60,16 @@ button#reload:hover {
 }
 
 button#reload {
-    background-color: #fff;
-    border: none;
+    width: 95px;
+    height: auto;
     position: absolute;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    text-transform: uppercase;
-    font-family: "Dosis";
-    font-weight: bold;
-    border-radius: 2px;
-    letter-spacing: 2px;
-    cursor: pointer;
+    text-align: center;
 }
 
-.theme button:hover {
+button:hover {
     background-color: #fff;
     color: #000;
     transition: 0.3s;
@@ -83,13 +77,13 @@ button#reload {
     width: 80px;
 }
 
-.theme button {
+button {
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 20px;
     text-transform: uppercase;
     font-family: "Dosis";
     color: #fff;
-    border-radius: 50px;
+    border-radius: 2px;
     letter-spacing: 2px;
     cursor: pointer;
     margin-top: -70px;
@@ -99,7 +93,7 @@ button#reload {
     transition: 0.3s;
 }
 
-.theme button:focus {
+button:focus {
     outline: none;
 }
 
