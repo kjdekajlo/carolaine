@@ -20,14 +20,16 @@ $(document).ready(function () {
 
     }
 
-    var title = ["student", "developer", "gamer", "translator"];
-
-
-    for (var i = 0; i < title.length; i++) {
-        window.setInterval(function() {
-            $("#title").text(title[i]);
-        }, 5000);
-    }
+    $(function () {
+        count = 0;
+        var title = ["student", "developer", "gamer", "translator", "human"];
+        setInterval(function () {
+          count++;
+          $("#title").fadeOut(600, function () {
+            $(this).text(title[count % title.length]).fadeIn(600);
+          });
+        }, 2000);
+      });
 
 
 });
