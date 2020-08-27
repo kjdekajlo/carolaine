@@ -7,35 +7,65 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Marcellus|Marcellus+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+     <script src="https://www.google.com/recaptcha/api.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#email").click(function(){
+    $("#captcha").slideToggle();
+  });
+    
+    
+});
+</script>
+
 </head>
 
 <body>
     <nav>
-        <div id="logoname"><a href="https://kjdekajlo.github.io/portfolio/">.carolaine</a></div>
+        <div id="logoname"><a href="https://kjdekajlo.github.io/carolaine/">.carolaine</a></div>
     </nav>
     
-    <div id="container">
-     work in progres...
-        <div class="card"></div>
         
+        <div id="pass">
+            <a href="https://twitter.com/littletoomercy"><div class="icon"><img src="SocialMedia/twitter.svg" /></div></a>
+            <div class="icon"><img src="SocialMedia/discord.svg" /></div>
+            <div class="icon soon"><img src="SocialMedia/soundcloud.svg" /></div>
+        </div>
+    <button id="email" class="soon">request e-mail</button>
+        
+        <div id="captcha">
+            <div class="g-recaptcha cap" data-sitekey="6Lf0V8MZAAAAAAQ58II5ghogAlx0JKqTfS9xroWU"></div>
+            </div>
+        <div id="container">
+        <div class="card"> 
+        <img src="Logo/rullo.jpg" />
+        <span>Translated the mobile game "Rullo" from English to Polish during one summer in Turkey. Also, contributed lots of time playing this gorgeous game. I would recommend it to anyone from the bottom of my heart. </span>
+        </div>
+
+        <div class="card">
+        <a href="https://store.steampowered.com/app/1069030/EarthX/"><img src="Logo/earthx.jpg" /></a>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nulla dapibus, fermentum lacus eu, vestibulum tellus. Cras viverra suscipit ipsum sed scelerisque.</span>
+            
+        </div>
     </div>
     
     <footer>
     
-    
+    <div>Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     
     </footer>
 </body>

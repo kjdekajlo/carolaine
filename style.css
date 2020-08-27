@@ -1,30 +1,30 @@
-html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-a::selection {
-    display: none;
-}
-
-body {
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#AFD0D6, #C49799);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+}
+
+
+body {
     color: #fff;
+    
+    background: #d7ffc6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d7ffc6), color-stop(100%,#629e67));
+  background: -webkit-linear-gradient(top,  #d7ffc6 0%, #629e67 100%);
+  background:    -moz-linear-gradient(top,  #d7ffc6 0%, #629e67 100%);
+  background:     -ms-linear-gradient(top,  #d7ffc6 0%, #629e67 100%);
+  background:      -o-linear-gradient(top,  #d7ffc6 0%, #629e67 100%);
+  background:         linear-gradient(to bottom, #d7ffc6 0%, #629e67 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7ffc6', endColorstr='#629e67',GradientType=0 );
+  background-attachment: fixed;
 }
 
 
 #logoname a {
     padding: 0 7.5px;
     text-decoration: none;
-    color: #80989C;
+    color: #6a7d80;
     transition: 0.2s;
 }
 
@@ -38,13 +38,168 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Alata', sans-serif;
-    margin: 70px 0px;
+    margin: 70px 0px 90px;
 }
 
 #container {
     font-size: 25px;
     display: flex;
-    justify-content: center;
     
-    font-family: Alata;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Alata', sans-serif;
 }
+
+.card {
+    display: flex;
+    margin: 20px;
+    border-radius: 5px;
+    background: #f3f1eb;
+    border: 4px #f3f1eb solid;
+    width: 750px;
+    box-shadow: #00000014 -2px 4px 8px 0px;
+    align-items: center;
+}
+
+ .card a img, .card img {
+    border-radius: 5px;
+    max-height: 150px;
+    margin: 12px;
+}
+
+.card span, .card a span  {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-content: center;
+    
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    color: #684169;
+}
+
+.card:nth-child(even) {
+      flex-direction: row-reverse;
+}
+
+.card:nth-child(even) span, .card:nth-child(even) a span {
+  padding: 20px 20px 20px 32px;
+}
+
+.card:nth-child(odd) span, .card:nth-child(odd) a span {
+  padding: 20px 32px 20px 20px;
+}
+
+#email {
+    text-align: center;
+    background-color: #d5f57f00;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: "Dosis";
+    color: #222;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 30px auto 70px;
+    box-sizing: border-box;
+    width: 230px;
+    border: #f3f1eb solid 2px;
+    transition: 0.3s;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon:focus, #email:focus {
+    outline: none;
+}
+
+#email:hover {
+    background-color: #f3f1eb;
+    color: #684169;
+    transition: 0.3s;
+    width: 230px;
+}
+
+.icon:active {
+    transform: scale(0.98); 
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.24);
+}
+
+#email:active { 
+    transform: scale(0.98);      
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+.icon img {
+    height: 20px;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+footer {
+    display: none;
+}
+
+#pass {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 150px;
+    margin: 0 auto 10px;
+    
+}
+
+#captcha {
+    margin: 20px auto 80px;
+    width: 30%;
+    padding: 25px;
+    background: #f3f1eb;
+    border-radius: 5px;
+    box-shadow: #00000014 -2px 4px 8px 0px;
+    
+    display: none;
+    justify-content: center;
+}
+
+.cap {
+    margin: 0 auto;
+} 
+
+.soon::after {
+    content: "coming soon";
+    text-align: center;
+    position: absolute;
+    font-size: 12px;
+    background-color: black;
+    padding: 3px 5px;
+    border-radius: 5px;
+    height: 18px;
+    width: 90.44px;
+    font-family: Alata;
+    text-decoration: none;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+  word-break: keep-all;
+}
+
+.icon.soon::after {
+    margin: 2.5px 0 0 20px;
+    
+}
+
+#email.soon::after {
+    margin-left: 185px;
+    cursor: default;
+}
+
+
+
+
+
+
+
