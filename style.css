@@ -62,23 +62,9 @@ body {
           box-shadow: 0 0 1px rgba(0, 0, 0, 0.24);
 }
 
-.socialmedia__icon--soon::after {
-  margin: 2.5px 0 0 20px;
-  content: "coming soon";
-  text-align: center;
-  position: absolute;
-  font-size: 12px;
-  background-color: black;
-  padding: 3px 5px;
-  border-radius: 5px;
-  height: 18px;
-  width: 90.44px;
-  font-family: Alata;
-  text-decoration: none;
-  color: white;
-  text-transform: lowercase;
-  letter-spacing: 1px;
-  word-break: keep-all;
+.socialmedia__icon--soon a {
+  opacity: 20%;
+  cursor: not-allowed;
 }
 
 .socialmedia__img {
@@ -106,9 +92,14 @@ body {
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px;
   border-radius: 5px;
   background: #f3f1eb;
@@ -116,27 +107,20 @@ body {
   width: 750px;
   -webkit-box-shadow: #00000014 -2px 4px 8px 0px;
           box-shadow: #00000014 -2px 4px 8px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .card__img {
   border-radius: 5px;
   max-height: 150px;
-  margin: 12px;
 }
 
 .card__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: justify;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 10px;
   font-size: 19px;
   font-family: 'Open Sans', sans-serif;
   color: #684169;
@@ -236,8 +220,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: black;
 }
 
 footer {
   display: none;
 }
+/*# sourceMappingURL=style.css.map */
